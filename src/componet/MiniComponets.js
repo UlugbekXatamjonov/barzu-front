@@ -10,6 +10,7 @@ import newHead from "../all-information/newsImg/newsheader.png";
 import Corusel from "./Corusel";
 import CountUp from "react-countup";
 import newImg from "../all-information/newsImg/new.png";
+import SendComment from "./SendComment";
 import  AOS  from "aos";
 import "aos/dist/aos.css";
 export const Header = () =>{
@@ -266,20 +267,7 @@ export const Comment  = () =>{
             
             >
                 <iframe src={location}  ></iframe>
-                <form action="" method="post"
-                 data-aos="fade-up"
-                 data-aos-duration="2000" 
-                 data-aos-delay="150"
-                
-                >
-                    <div className="grid2">
-                        <input type="text" placeholder="First Name" />
-                        <input type="email" placeholder="Email" />
-                    </div>
-                    <input type="text" placeholder="Subject" />
-                    <textarea name="" placeholder="Message" id="" cols="30" rows="10"></textarea>
-                    <button type="submit">Xabar yuborish</button>
-                </form>
+                <SendComment />
             </div>
         </div>
     )
